@@ -5,7 +5,7 @@
 export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="firefox"
+export BROWSER="brave"
 export READER="zathura"
 export FILE="vifm"
 export BIB="$HOME/Documents/LaTeX/uni.bib"
@@ -34,4 +34,4 @@ echo "$0" | grep "bash$" >/dev/null && [ -f ~/.bashrc ] && source "$HOME/.bashrc
 [ "$(tty)" = "/dev/tty1" ] && ! pgrep -x i3 >/dev/null && exec startx
 
 # Switch escape and caps if tty:
-sudo -n loadkeys ~/.local/bin/ttymaps.kmap 2>/dev/null
+# sudo -n loadkeys ~/.local/bin/ttymaps.kmap 2>/dev/null

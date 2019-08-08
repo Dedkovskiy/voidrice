@@ -1,0 +1,17 @@
+#!/bin/sh
+
+kb_name='AT Translated Set 2 keyboard'
+
+icon="🎹"
+
+xinput list "$kb_name" | grep -i --quiet disable && toggle=enable || toggle=disable
+
+case $BLOCK_BUTTON in
+	1) xinput $toggle "$kb_name" ;;
+	2) xinput $toggle "$kb_name" ;;
+	3) pgrep -x dunst >/dev/null && notify-send "🎹 Keyboard module" "\- Click to toggle keyboard."
+esac
+
+xinput list "$kb_name" | grep -i --quiet disable && color="#ff0000" || color="#ffffff"
+
+printf "<span color='%s'>%s</span>" "$color" "$icon"

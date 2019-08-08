@@ -2,7 +2,7 @@
 super + Return
 	$TERMINAL
 super + d
-	dmenu_run
+	dmenu_run -fn "Inconsolata:monospace:pixelsize=20"
 super + r
 	$TERMINAL -e $FILE
 super + e
@@ -66,9 +66,9 @@ XF86AudioPrev
 XF86AudioStop
 	lmc toggle
 XF86MonBrightnessDown
-	xbacklight -dec 15
+	xbacklight -dec 10
 XF86MonBrightnessUp
-	xbacklight -inc 15
+	xbacklight -inc 10
 
 
 # Recording
