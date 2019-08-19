@@ -65,6 +65,9 @@ interval=once
 command=battery BAT1
 interval=5
 
+[kb_layout]
+interval=once
+
 [clock]
 label=📅
 interval=30

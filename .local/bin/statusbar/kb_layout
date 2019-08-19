@@ -1,0 +1,11 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+	1) xkb-switch -n ;;
+	2) xkb-switch -n ;;
+	3) pgrep -x dunst >/dev/null && notify-send "Layout module" "\- Click to switch layout."
+esac
+
+layout=exec xkb-switch
+
+printf "<span>%s</span>" "$layout"
