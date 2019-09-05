@@ -8,3 +8,7 @@ image/png=img.desktop;
 image/jpeg=img.desktop;
 image/gif=img.desktop;
 application/rss+xml=rss.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=org.pwmt.zathura-djvu.desktop
+
+[Added Associations]
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=zenmap.desktop;org.pwmt.zathura-djvu.desktop;

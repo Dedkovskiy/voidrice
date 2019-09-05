@@ -1,5 +1,6 @@
 $include /etc/inputrc
 set editing-mode vi
+set show-all-if-ambiguous on
 $if mode=vi
 
 set show-mode-in-prompt on
@@ -17,3 +18,4 @@ Control-l: clear-screen
 Control-a: beginning-of-line
 
 $endif
+

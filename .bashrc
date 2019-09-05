@@ -9,4 +9,7 @@ export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput se
 
 if [ "$PS1" ]; then
 complete -cf sudo
+complete -c man which tldr
 fi
+export DOTNET_ROOT=/opt/dotnet
+export MSBuildSDKsPath="/opt/dotnet/sdk/2.2.105/Sdks/";
