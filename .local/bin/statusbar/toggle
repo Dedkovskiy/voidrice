@@ -14,4 +14,4 @@ esac
 
 xinput list "$kb_name" | grep -i --quiet disable && color="#ff0000" || color="#ffffff"
 
-printf "<span color='%s'>%s</span>" "$color" "$icon"
+printf "<span color='%s'>%s</span>\n" "$color" "$icon"

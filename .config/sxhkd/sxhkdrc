@@ -69,7 +69,10 @@ XF86MonBrightnessDown
 	xbacklight -dec 10
 XF86MonBrightnessUp
 	xbacklight -inc 10
-
+control+XF86MonBrightnessDown
+	xbacklight -dec 2
+control+XF86MonBrightnessUp
+	xbacklight -inc 2
 
 # Recording
 # Take screenshot
@@ -89,11 +92,8 @@ super + Delete
 super + p
 	playerctl play-pause
 
-super + bracketright
-	playerctl next
-
-super + bracketleft
-	playerctl previous
+super + {bracketleft,bracketright}
+	playerctl {previous,next}
 
 #super + {_,shift +} p
 #	lmc {toggle,pause}
