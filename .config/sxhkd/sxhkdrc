@@ -89,17 +89,17 @@ super + Delete
 	dmenurecord kill
 
 # Pause audio
-super + p
-	playerctl play-pause
+#super + p
+#	playerctl play-pause
 
-super + {bracketleft,bracketright}
-	playerctl {previous,next}
+#super + {bracketleft,bracketright}
+#	playerctl {previous,next}
 
-#super + {_,shift +} p
-#	lmc {toggle,pause}
+super + {_,shift +} p
+	lmc {toggle,pause}
 # Changes to next/previous tracks
-#super + {comma,period}
-#	lmc {prev,next}
+super + {bracketleft,bracketright}
+	lmc {prev,next}
 # Restart track
 #super + shift + less
 #	lmc replay

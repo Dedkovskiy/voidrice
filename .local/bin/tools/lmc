@@ -8,11 +8,11 @@ case "$1" in
 	d*) pulsemixer --change-volume -"$num" ;;
 	m*) pulsemixer --toggle-mute ;;
 	truemute) pulsemixer --mute ;;
-	play) mpc play ;;
-	n*) mpc next ;;
-	prev) mpc prev ;;
-	t*) mpc toggle ;;
-	p*) mpc pause ; pauseallmpv ;;
+	play) mpc play; playerctl play ;;
+	n*) mpc next; playerctl next ;;
+	prev) mpc prev; playerctl previous ;;
+	t*) mpc toggle; playerctl play-pause ;;
+	p*) mpc pause ; playerctl pause; pauseallmpv ;;
 	f*) mpc seek +"$num" ;;
 	b*) mpc seek -"$num" ;;
 	r*) mpc seek 0% ;;
