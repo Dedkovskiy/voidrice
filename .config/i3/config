@@ -13,6 +13,7 @@ gaps inner 15
 gaps outer 10
 set $term --no-startup-id $TERMINAL
 set $mod Mod4
+set $transparent #282828ea
 
 # #---Dropdown Windows---# #
 # General dropdown window traits. The order can matter.
@@ -27,12 +28,16 @@ for_window [instance="dropdown_dropdowncalc"] border pixel 2
 for_window [instance="dropdown_*"] move position center
 
 bar {
-	font pango:monospace 9
+	i3bar_command i3bar -t
 	status_command i3blocks
+	font pango:monospace 11
 	position top
 	mode dock
 	modifier None
 	workspace_buttons yes
+	colors {
+	    background #00000000
+	}
 }
 
 # #---Basic Bindings---# #

@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+xss-lock -- i3lock -e -f -i ~/.config/arch-lock.png &
+xrdb .Xresources
 setbg &		# Set the background
 sxhkd &	# Bind keys
 # Switch to US international with Caps as Mod/Escape
