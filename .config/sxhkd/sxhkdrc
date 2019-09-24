@@ -2,7 +2,7 @@
 super + Return
 	$TERMINAL
 super + d
-	dmenu_run -fn "Inconsolata:monospace:pixelsize=20"
+	dmenu_run -fn "Inconsolata:monospace:pixelsize=19"
 super + r
 	$TERMINAL -e $FILE
 #super + e
